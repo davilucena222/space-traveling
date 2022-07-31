@@ -1,4 +1,6 @@
 import { GetStaticProps } from 'next';
+import Link from 'next/link';
+import Header from '../components/Header';
 
 import { getPrismicClient } from '../services/prismic';
 
@@ -24,13 +26,46 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-// export default function Home() {
-//   // TODO
-// }
+export default function Home({ postsPagination }: HomeProps) {
+  return(
+    <main className={commonStyles.container}>
+      <Header />
 
-// export const getStaticProps = async () => {
-//   // const prismic = getPrismicClient({});
-//   // const postsResponse = await prismic.getByType(TODO);
+      {postsPagination.results.map(post => (
+        <Link href={`/posts/${post.uid}`}>
+          <a className={styles.post}>
+            <strong>{post.data.title}</strong>
+            <p>{post.data.subtitle}</p>
+            <ul>
+              <li>{post.first_publication_date}</li>
+              <li>{post.data.author}</li>
+            </ul>
+          </a>
+        </Link>
+      ))}
+    </main>
+  )
+}
 
-//   // TODO
-// };
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = getPrismicClient({});
+  const postsResponse = await prismic.getByType("posts", {
+    pageSize: 3,
+    orderings: {
+      field: "last_publication_date",
+      direction: "desc",
+    }
+  });
+
+  const postsPagination = {
+    next_page: postsResponse.next_page,
+    results: postsResponse.results,
+  }
+
+
+  return {
+    props: {
+      postsPagination,
+    }
+  }
+};

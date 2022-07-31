@@ -1,0 +1,61 @@
+{
+  "id": "ef78bc53-4e0d-4c42-b51a-65eb0fdf1baf",
+  "uid": "et-consequatur-sit",
+  "type": "posts",
+  "data": {
+    "title": "scale dynamic experiences",
+    "subtitle": "synthesize end-to-end solutions",
+    "author": "engineer user-centric web-readiness",
+    "banner": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+    },
+    "content": [
+      {
+        "heading": "reinvent distributed e-business",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Consequat cillum do cupidatat enim minim dolor irure ea. Dolore minim reprehenderit adipisicing proident id nulla incididunt irure elit voluptate elit culpa magna sint Lorem.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": "e-enable out-of-the-box relationships",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Ipsum nisi in enim anim nostrud pariatur et sint labore cillum eu eiusmod pariatur cillum. Pariatur amet est irure excepteur Lorem culpa duis reprehenderit duis sit anim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": "integrate revolutionary e-business",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Non adipisicing mollit aliquip.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": "innovate out-of-the-box solutions",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Aliqua incididunt commodo magna ex fugiat cupidatat labore cillum. Labore excepteur do aliqua id id et reprehenderit. Ea sit officia exercitation.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}
