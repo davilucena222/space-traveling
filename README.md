@@ -15,7 +15,7 @@ This project was developed with the following tecnologies:
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Sass](https://sass-lang.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [Date fns]()
+- [Date fns](https://date-fns.org/)
 
 ## 💡 About the project 
 <p>Spacetraveling is a simple blog for make your posts and show them for your audience, followers and whatever who wants to see and read your content. </p>
